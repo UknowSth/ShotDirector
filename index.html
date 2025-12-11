@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="description" content="ShotDirector: Directorially Controllable Multi-Shot Video Generation with Cinematographic Transitions">
+  <meta name="keywords" content="ShotDirector: : Directorially Controllable Multi-Shot Video Generation with Cinematographic Transitions">
+  <meta name="viewport" content="width=device-width, initial-scale=2">
+  <meta name="viewport" content="width=device-width">
+  <title>ShotDirector: Directorially Controllable Multi-Shot Video Generation with Cinematographic Transitions</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script type="text/javascript" async="" src="./settings/js"></script><script async="" src="./settings/js(1)"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <style type="text/css">svg:not(:root).svg-inline--fa{overflow:visible}.svg-inline--fa{display:inline-block;font-size:inherit;height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-lg{vertical-align:-.225em}.svg-inline--fa.fa-w-1{width:.0625em}.svg-inline--fa.fa-w-2{width:.125em}.svg-inline--fa.fa-w-3{width:.1875em}.svg-inline--fa.fa-w-4{width:.25em}.svg-inline--fa.fa-w-5{width:.3125em}.svg-inline--fa.fa-w-6{width:.375em}.svg-inline--fa.fa-w-7{width:.4375em}.svg-inline--fa.fa-w-8{width:.5em}.svg-inline--fa.fa-w-9{width:.5625em}.svg-inline--fa.fa-w-10{width:.625em}.svg-inline--fa.fa-w-11{width:.6875em}.svg-inline--fa.fa-w-12{width:.75em}.svg-inline--fa.fa-w-13{width:.8125em}.svg-inline--fa.fa-w-14{width:.875em}.svg-inline--fa.fa-w-15{width:.9375em}.svg-inline--fa.fa-w-16{width:1em}.svg-inline--fa.fa-w-17{width:1.0625em}.svg-inline--fa.fa-w-18{width:1.125em}.svg-inline--fa.fa-w-19{width:1.1875em}.svg-inline--fa.fa-w-20{width:1.25em}.svg-inline--fa.fa-pull-left{margin-right:.3em;width:auto}.svg-inline--fa.fa-pull-right{margin-left:.3em;width:auto}.svg-inline--fa.fa-border{height:1.5em}.svg-inline--fa.fa-li{width:2em}.svg-inline--fa.fa-fw{width:1.25em}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers-text{left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);-webkit-transform-origin:center center;transform-origin:center center}.fa-layers-counter{background-color:#ff253a;border-radius:1em;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;height:1.5em;line-height:1;max-width:5em;min-width:1.5em;overflow:hidden;padding:.25em;right:0;text-overflow:ellipsis;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-bottom-right{bottom:0;right:0;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom right;transform-origin:bottom right}.fa-layers-bottom-left{bottom:0;left:0;right:auto;top:auto;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:bottom left;transform-origin:bottom left}.fa-layers-top-right{right:0;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top right;transform-origin:top right}.fa-layers-top-left{left:0;right:auto;top:0;-webkit-transform:scale(.25);transform:scale(.25);-webkit-transform-origin:top left;transform-origin:top left}.fa-lg{font-size:1.3333333333em;line-height:.75em;vertical-align:-.0667em}.fa-xs{font-size:.75em}.fa-sm{font-size:.875em}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:2.5em;padding-left:0}.fa-ul>li{position:relative}.fa-li{left:-2em;position:absolute;text-align:center;width:2em;line-height:inherit}.fa-border{border:solid .08em #eee;border-radius:.1em;padding:.2em .25em .15em}.fa-pull-left{float:left}.fa-pull-right{float:right}.fa.fa-pull-left,.fab.fa-pull-left,.fal.fa-pull-left,.far.fa-pull-left,.fas.fa-pull-left{margin-right:.3em}.fa.fa-pull-right,.fab.fa-pull-right,.fal.fa-pull-right,.far.fa-pull-right,.fas.fa-pull-right{margin-left:.3em}.fa-spin{-webkit-animation:fa-spin 2s infinite linear;animation:fa-spin 2s infinite linear}.fa-pulse{-webkit-animation:fa-spin 1s infinite steps(8);animation:fa-spin 1s infinite steps(8)}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes fa-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.fa-rotate-90{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.fa-rotate-180{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.fa-rotate-270{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.fa-flip-horizontal{-webkit-transform:scale(-1,1);transform:scale(-1,1)}.fa-flip-vertical{-webkit-transform:scale(1,-1);transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{-webkit-transform:scale(-1,-1);transform:scale(-1,-1)}:root .fa-flip-both,:root .fa-flip-horizontal,:root .fa-flip-vertical,:root .fa-rotate-180,:root .fa-rotate-270,:root .fa-rotate-90{-webkit-filter:none;filter:none}.fa-stack{display:inline-block;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:#fff}.sr-only{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.sr-only-focusable:active,.sr-only-focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:.4;opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:1;opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}.fad.fa-inverse{color:#fff}</style><link href="./settings/css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./settings/bulma.min.css">
+  <link rel="stylesheet" href="./settings/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./settings/bulma-slider.min.css">
+  <link rel="stylesheet" href="./settings/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./settings/academicons.min.css">
+  <link rel="stylesheet" href="./settings/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=block" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=block" rel="stylesheet">
+
+
+  <script src="./settings/jquery.min.js.下载"></script>
+  <script defer="" src="./settings/fontawesome.all.min.js.下载"></script>
+  <script src="./settings/bulma-carousel.min.js.下载"></script>
+  <script src="./settings/bulma-slider.min.js.下载"></script>
+  <script src="./settings/index.js.下载"></script>
+<style>
+  body {
+    max-width: 2400px;
+    margin: 0 auto;
+  }
+</style>
+
+<style>
+  .rainbow-word {
+    background: linear-gradient(90deg, #A8E6A3, #6FD6A8, #3CB58C);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    animation: rainbow-slide 5s linear infinite;
+  }
+
+  @keyframes rainbow-slide {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+</style>
+
+<style type="text/css">
+@font-face {
+  font-family: "xm-iconfont";
+  src: url('//at.alicdn.com/t/font_792691_ptvyboo0bno.eot?t=1574048839056');
+  /* IE9 */
+  src: url('//at.alicdn.com/t/font_792691_ptvyboo0bno.eot?t=1574048839056#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAksAAsAAAAAEYAAAAjeAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCEUgqTXI8lATYCJAM0CxwABCAFhG0HgTwbZQ4jEbaCkVIj+4sD3sS6BFAp9ka91ulVG4leTC/+h+3V+zyRYCTyREKkcZ+D5/u137lPdveLGJBMunoiNPOQPBMq0/FQtEKIkMRDZng69d+hOiQumAr7bJdBOEzMTU77s78mhbI58aCg7ebCs4LBTgCk+cD/4ZqWUHebipp7al3tyKOjwCV/hVyw9PdzaktxI7IMQs26/1N8gV4DI0bVut3UhCaflGGgwM3oTXg1IfRMbCsmrEnriJVeYM2eXHII4KdMMzL4OoACHgZBCTasITcReDUBE8kWPLMTCGoQaDV+eKpUPQI49r8vP6BTPIDCaiBSml3oOQX0voNPebv/u2P0AUfP1w0s5EADzYBZsNdByylo2eVq/NtRdgFpovQR5x2CIwmIZeik6/u0T/m/A7RJP00sCmmyksj/kwc+LC5BFBqDEMDDjwPiANDB9MpJTXwHmsO3YyBwWDA4OFwwJLRcRgAOBUYMDg0mHRwGTAYozsV0AgWYruDwwExDHfzwKWf4OurQ9jzQDtoF+wpistfBfluQ5bQiiJa4ZQoKhShLiMayBbyg05AIkYBoIBJEEApQy/FwYv4HchADIUBXl61dW6mpwIgyp7p8PrHddieSjhY9oqTxyPB/FGNYDklpfYh8VtaoqSgb0bKoGB17CuVUp9Ll2nS2UpNGMSw9hyirA7C6+QLyByIQS0sSSmxvArC5odZmYZMxZSiBR5OkQl0uiufxMH5eL8t3u0d4XKyuq6EMdcpNe2+oXA8p9yPa+4T1PM7+A54tc7tpl2vcAHAftnhZj2chy1CyaCRFsyMqQ5nkNnskEt2yxxZinPsOZjFm4+XWvKqLkfCGS1k4MNP82isxSMf7ZsGYvQVCNAeSSVtzWCxRdXGxyZlA2CvCEevuO7y9M2z2NWH8icydzq/qAJSp1lGvDWFp6Nw3xChJowPD+76nU+upQk6Kw9jI0Rgym9Ct8VlxMI3CSIaDCZja5tDYt0/EYra4tn0Kp3v8Rdezk8svcy1mKhoSvNcZz3LKlUe777Gmval0s7bzAc0k13LGk896V9DuvNn34N0ebKgItkQgOomuJtgQPChNI4cwa7CEWCvfk5QjJFlem6i3SfVShWi5LTFRG+JwdCNpSqbpRFwrtb1TbcRkJi/AbJJQOmfCdnswLNGVM7qqSRO1zO0Q0j5Vr3cYQ07HB0MX6KoIZhx+D9Djs2C5bXtVwvbgJHtSCIL7hjFJme4sZDdS5IlJdKUO1Qt8opn0trBafz3AX933kmCRgyMEWGZjMAkRKhwmIHJGR4ruwFCdWKYzrap2R/mvd2UKajzRAZu88pGAD90Y+02kTFCKrBSXwGGJ3wRcPCdIppTxSmHOfESRwIli0S5J/8AYDCxTGh4XZua4xvfvGx320rDK2qA8g5FlS7pWNLx71+BwgA/KZ5I0aeKmNeCNoNPl8qNHu8uHHzqaKc86fHi4vPuRI4ny+I/vjxw+clh4HXVCFvVnVFx07EHZwVhSRliTTMWSEi0h6YuS6DxCRmiin0B3L4ry6cvR0ijYexFdBL3wGQM0YOrUAZCBkLOBBtQ+xdk7omfgUv+u++admyUeXduyxLM+r/+49rPfhgEZor6GymToNYksNsZyC7ntwAH0928UpgMpxpF0ydNlsMMBw7QsxTCmu0Hf3F+/+vb99Yumhb+e9R0LBNm+4O+hu7lQ5bGjI9j5G88qQ5SLFyuEC7cwd25xoYo2j4eA4bhpM7TZhPtmc+uhVEVSMYXLWh0bfjI8dvUpvDUocPZmU4kwwOfc83wB5wPehrpD3waApbwW+fgRrZXcxw+mB/3woZT+8JFMYwRMIy2k/18qhqcKpjYeYSnIACaUoRDu0e3kQFh98R5fiI8oJqwwGZSJDSbehLzZs7zIeWTQ4UGOIs2c4j2/Q/tn7n7j9juO33On6WhURCT/wO6Y3QdmWFY0Ef6JUeGRggO7ZbtaZlh5RYKWXbLPBLc3l/5h4A0mu3ZXTZ+u6t6VHMAzZhxak50T+24NnRuaOmehRkXlqVR5lIpuwezUUDUdCuJysv8Z/0/8uNE1s7jIJIubFWnI/x7g4nAZx79yYpFoAOU3a9iwT1O/GxUxPY0ljVPv9EukI3qNrl/So2YfzasqHCroNjS0+w0tlPlsYfC6v/01ixquizJH1Kd/VK+OS3iS3rTJWmqsMPdU3B3oFyC9RSumWE/0gG36IjTysfH51IJ/5oOgNYu6p4yb5Fdufhr/Kjtu0oSyYP/WJQrz35aNFnMhtFcwb55NlNnH8Wdu1b+XZA9zqlZrhdPo/V3uBhiUlQ66h0LhbAmFYIncdFOpVMh6Fl7peqy5Z2ZdQBITO2x1Asj1dRFjIBMC3hbuUh8Ooc4W03EjAdo8UL/t0oUfyU8630bmMcw/vqDNAsC9BQD4OqCgH+ljy0UhJB8AAJA+8EmArxk5gnRLik90AElf8rBm+IMvBTWnucb3+0o0ARk+r0ZBv8sU01nnSmP45/H8Dp8C8X+iE9e+ZvXymK/sQJ5/DuqhYKebPnKmPqLYuDcIMWS2/Rjxp2s8Do821LVn6A/xMK1RKvBLK5gyDsZ5uQ6bYusmx2yqLFe4lECHDPcFhojmckuAbnCI6Cn308RI6AAJdtCICQLQyBHKhSgX5YowN6BBPIEB8VxuSfNncpAuutzPnCSiDHDEo+DsKQBPoJi4MpRktepIs2zjO5h84IEMM3ffECKSZU1ZHxfewEI4h494MuuUNNOBjuw18QKHAzEXaAcylS3m3baq9MpnKenYmfEUgCdbXTHEtTVKsvruNGv9/DuYfOAhcuKu9TeEiA9nNJTUDOUbbVkn3sv2eDJrEnVrpvcHOjJeqRsOcpYYLuxoBzKVtCOm3ZaKbtJcurw+e/zN6c7Pd6r4gqUo0WLEiiOueOITvwQkKCEJM9nO3F60y5HkqLhdqUyXZtK3lqwReQ+G40O92UhOt0x/KmKM+u7LTPMzoEBOCYtiUPfSjODiuFXjSDm2idzAoc4Tj9bs2eJYDOU7HQA=') format('woff2'), url('//at.alicdn.com/t/font_792691_ptvyboo0bno.woff?t=1574048839056') format('woff'), url('//at.alicdn.com/t/font_792691_ptvyboo0bno.ttf?t=1574048839056') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */ url('//at.alicdn.com/t/font_792691_ptvyboo0bno.svg?t=1574048839056#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.xm-iconfont {
+  font-family: "xm-iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.xm-icon-quanxuan:before {
+  content: "\e62c";
+}
+.xm-icon-caidan:before {
+  content: "\e610";
+}
+.xm-icon-fanxuan:before {
+  content: "\e837";
+}
+.xm-icon-pifu:before {
+  content: "\e668";
+}
+.xm-icon-qingkong:before {
+  content: "\e63e";
+}
+.xm-icon-sousuo:before {
+  content: "\e600";
+}
+.xm-icon-danx:before {
+  content: "\e62b";
+}
+.xm-icon-duox:before {
+  content: "\e613";
+}
+.xm-icon-close:before {
+  content: "\e601";
+}
+.xm-icon-expand:before {
+  content: "\e641";
+}
+.xm-icon-banxuan:before {
+  content: "\e60d";
+}
+</style><style type="text/css">@-webkit-keyframes xm-upbit {
+  from {
+    -webkit-transform: translate3d(0, 30px, 0);
+    opacity: 0.3;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes xm-upbit {
+  from {
+    transform: translate3d(0, 30px, 0);
+    opacity: 0.3;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+xm-select {
+  background-color: #FFF;
+  position: relative;
+  border: 1px solid #E6E6E6;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+}
+xm-select * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+xm-select:hover,
+xm-select:focus {
+  border-color: #C0C4CC;
+}
+xm-select > .xm-tips {
+  color: #999999;
+  padding: 0 10px;
+  position: absolute;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+xm-select > .xm-icon {
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 10px;
+  top: 50%;
+  margin-top: -3px;
+  cursor: pointer;
+  border: 6px dashed transparent;
+  border-top-color: #C2C2C2;
+  border-top-style: solid;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+xm-select > .xm-icon-expand {
+  margin-top: -9px;
+  transform: rotate(180deg);
+}
+xm-select > .xm-label.single-row {
+  position: absolute;
+  top: 0;
+  bottom: 0px;
+  left: 0px;
+  right: 30px;
+  overflow: auto hidden;
+}
+xm-select > .xm-label.single-row .scroll {
+  overflow-y: hidden;
+}
+xm-select > .xm-label.single-row .label-content {
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+xm-select > .xm-label.auto-row .label-content {
+  flex-wrap: wrap;
+  padding-right: 30px !important;
+}
+xm-select > .xm-label.auto-row .xm-label-block > span {
+  white-space: unset;
+  height: 100%;
+}
+xm-select > .xm-label .scroll .label-content {
+  display: flex;
+  padding: 3px 10px;
+}
+xm-select > .xm-label .xm-label-block {
+  display: flex;
+  position: relative;
+  padding: 0px 5px;
+  margin: 2px 5px 2px 0;
+  border-radius: 3px;
+  align-items: baseline;
+  color: #FFF;
+}
+xm-select > .xm-label .xm-label-block > span {
+  display: flex;
+  color: #FFF;
+  white-space: nowrap;
+}
+xm-select > .xm-label .xm-label-block > i {
+  color: #FFF;
+  margin-left: 8px;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+}
+xm-select > .xm-label .xm-label-block.disabled {
+  background-color: #C2C2C2 !important;
+  cursor: no-drop !important;
+}
+xm-select > .xm-label .xm-label-block.disabled > i {
+  cursor: no-drop !important;
+}
+xm-select > .xm-body {
+  position: absolute;
+  left: 0;
+  top: 42px;
+  padding: 5px 0;
+  z-index: 999;
+  width: 100%;
+  min-width: fit-content;
+  border: 1px solid #E6E6E6;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  animation-name: xm-upbit;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+xm-select > .xm-body .scroll-body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+xm-select > .xm-body .scroll-body::-webkit-scrollbar {
+  width: 8px;
+}
+xm-select > .xm-body .scroll-body::-webkit-scrollbar-track {
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  border-radius: 2em;
+  background-color: #FFF;
+}
+xm-select > .xm-body .scroll-body::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  border-radius: 2em;
+  background-color: #C2C2C2;
+}
+xm-select > .xm-body.up {
+  top: auto;
+  bottom: 42px;
+}
+xm-select > .xm-body.relative {
+  position: relative;
+  display: block !important;
+  top: 0;
+  box-shadow: none;
+  border: none;
+  animation-name: none;
+  animation-duration: 0;
+  min-width: 100%;
+}
+xm-select > .xm-body .xm-group {
+  cursor: default;
+}
+xm-select > .xm-body .xm-group-item {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 10px;
+  color: #999;
+  font-size: 12px;
+}
+xm-select > .xm-body .xm-option {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 10px;
+  cursor: pointer;
+}
+xm-select > .xm-body .xm-option-icon {
+  color: transparent;
+  display: flex;
+  border: 1px solid #E6E6E6;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+}
+xm-select > .xm-body .xm-option-icon.xm-custom-icon {
+  color: unset;
+  border: unset;
+}
+xm-select > .xm-body .xm-option-icon-hidden {
+  margin-right: -10px;
+}
+xm-select > .xm-body .xm-option-icon.xm-icon-danx {
+  border-radius: 100%;
+}
+xm-select > .xm-body .xm-option-content {
+  display: flex;
+  position: relative;
+  padding-left: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  ;
+  width: calc(100% - 20px);
+}
+xm-select > .xm-body .xm-option.hide-icon .xm-option-content {
+  padding-left: 0;
+}
+xm-select > .xm-body .xm-option.selected.hide-icon .xm-option-content {
+  color: #FFF !important;
+}
+xm-select > .xm-body .xm-option .loader {
+  width: 0.8em;
+  height: 0.8em;
+  margin-right: 6px;
+  color: #C2C2C2;
+}
+xm-select > .xm-body .xm-select-empty {
+  text-align: center;
+  color: #999;
+}
+xm-select > .xm-body .disabled {
+  cursor: no-drop;
+}
+xm-select > .xm-body .disabled:hover {
+  background-color: #FFF;
+}
+xm-select > .xm-body .disabled .xm-option-icon {
+  border-color: #C2C2C2 !important;
+}
+xm-select > .xm-body .disabled .xm-option-content {
+  color: #C2C2C2 !important;
+}
+xm-select > .xm-body .disabled.selected > .xm-option-icon {
+  color: #C2C2C2 !important;
+}
+xm-select > .xm-body .xm-search {
+  background-color: #FFF !important;
+  position: relative;
+  padding: 0 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+xm-select > .xm-body .xm-search > i {
+  position: absolute;
+  /* color: ; */
+}
+xm-select > .xm-body .xm-search-input {
+  border: none;
+  border-bottom: 1px solid #E6E6E6;
+  padding-left: 27px;
+  cursor: text;
+}
+xm-select > .xm-body .xm-paging {
+  padding: 0 10px;
+  display: flex;
+  margin-top: 5px;
+}
+xm-select > .xm-body .xm-paging > span:first-child {
+  border-radius: 2px 0 0 2px;
+}
+xm-select > .xm-body .xm-paging > span:last-child {
+  border-radius: 0 2px 2px 0;
+}
+xm-select > .xm-body .xm-paging > span {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 0 -1px 0 0;
+  background-color: #fff;
+  color: #333;
+  font-size: 12px;
+  border: 1px solid #e2e2e2;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow: hidden;
+  min-width: 50px;
+}
+xm-select > .xm-body .xm-toolbar {
+  padding: 0 10px;
+  display: flex;
+  margin: -3px 0;
+  cursor: default;
+}
+xm-select > .xm-body .xm-toolbar .toolbar-tag {
+  cursor: pointer;
+  display: flex;
+  margin-right: 20px;
+  /* color: ; */
+  align-items: baseline;
+}
+xm-select > .xm-body .xm-toolbar .toolbar-tag:hover {
+  opacity: 0.8;
+}
+xm-select > .xm-body .xm-toolbar .toolbar-tag:active {
+  opacity: 1;
+}
+xm-select > .xm-body .xm-toolbar .toolbar-tag > i {
+  margin-right: 2px;
+  font-size: 14px;
+}
+xm-select > .xm-body .xm-toolbar .toolbar-tag:last-child {
+  margin-right: 0;
+}
+xm-select > .xm-body .xm-body-custom {
+  line-height: initial;
+  cursor: default;
+}
+xm-select > .xm-body .xm-body-custom * {
+  box-sizing: initial;
+}
+xm-select > .xm-body .xm-tree {
+  position: relative;
+}
+xm-select > .xm-body .xm-tree-icon {
+  display: inline-block;
+  margin-right: 3px;
+  cursor: pointer;
+  border: 6px dashed transparent;
+  border-left-color: #C2C2C2;
+  border-left-style: solid;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  z-index: 2;
+  visibility: hidden;
+}
+xm-select > .xm-body .xm-tree-icon.expand {
+  margin-top: 3px;
+  margin-right: 5px;
+  margin-left: -2px;
+  transform: rotate(90deg);
+}
+xm-select > .xm-body .xm-tree-icon.xm-visible {
+  visibility: visible;
+}
+xm-select > .xm-body .xm-tree .left-line {
+  position: absolute;
+  left: 13px;
+  width: 0;
+  z-index: 1;
+  border-left: 1px dotted #c0c4cc !important;
+}
+xm-select > .xm-body .xm-tree .top-line {
+  position: absolute;
+  left: 13px;
+  height: 0;
+  z-index: 1;
+  border-top: 1px dotted #c0c4cc !important;
+}
+xm-select > .xm-body .xm-tree .xm-tree-icon + .top-line {
+  margin-left: 1px;
+}
+xm-select > .xm-body .scroll-body > .xm-tree > .xm-option > .top-line,
+xm-select > .xm-body .scroll-body > .xm-option > .top-line {
+  width: 0 !important;
+}
+xm-select > .xm-body .xm-cascader-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 5px 0;
+  border: 1px solid #E6E6E6;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  margin: -1px;
+}
+xm-select > .xm-body .xm-cascader-box::before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-right-color: #E6E6E6;
+  top: 10px;
+  left: -12px;
+}
+xm-select > .xm-body .xm-cascader-box::after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-right-color: #fff;
+  top: 10px;
+  left: -11px;
+}
+xm-select > .xm-body .xm-cascader-scroll {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+xm-select > .xm-body.cascader {
+  width: unset;
+  min-width: unset;
+}
+xm-select > .xm-body.cascader .xm-option-content {
+  padding-left: 8px;
+}
+xm-select > .xm-body.cascader .disabled .xm-right-arrow {
+  color: #C2C2C2 !important;
+}
+xm-select > .xm-body.cascader .hide-icon.disabled .xm-right-arrow {
+  color: #999 !important;
+}
+xm-select .xm-input {
+  cursor: pointer;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #E6E6E6;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #FFF;
+  line-height: 1.3;
+  padding-left: 10px;
+  outline: 0;
+  user-select: text;
+  -ms-user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+}
+xm-select .dis {
+  display: none;
+}
+xm-select .loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+xm-select .loader {
+  border: 0.2em dotted currentcolor;
+  border-radius: 50%;
+  -webkit-animation: 1s loader linear infinite;
+  animation: 1s loader linear infinite;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  color: inherit;
+  vertical-align: middle;
+  pointer-events: none;
+}
+xm-select .xm-select-default {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  visibility: hidden;
+}
+xm-select .xm-select-disabled {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: no-drop;
+  z-index: 2;
+  opacity: 0.3;
+  background-color: #FFF;
+}
+xm-select .item--divided {
+  border-top: 1px solid #ebeef5;
+  width: calc(100% - 20px);
+  cursor: initial;
+}
+xm-select .xm-right-arrow {
+  position: absolute;
+  /* color: ; */
+  right: 5px;
+  top: -1px;
+  font-weight: 700;
+  transform: scale(0.6, 1);
+}
+xm-select .xm-right-arrow::after {
+  content: '>';
+}
+xm-select[size='large'] {
+  min-height: 40px;
+  line-height: 40px;
+}
+xm-select[size='large'] .xm-input {
+  height: 40px;
+}
+xm-select[size='large'] .xm-label .scroll .label-content {
+  line-height: 34px;
+}
+xm-select[size='large'] .xm-label .xm-label-block {
+  height: 30px;
+  line-height: 30px;
+}
+xm-select[size='large'] .xm-body .xm-option .xm-option-icon {
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+}
+xm-select[size='large'] .xm-paging > span {
+  height: 34px;
+  line-height: 34px;
+}
+xm-select[size='large'] .xm-tree .left-line {
+  height: 100%;
+  bottom: 20px;
+}
+xm-select[size='large'] .xm-tree .left-line-group {
+  height: calc(100% - 40px);
+}
+xm-select[size='large'] .xm-tree .xm-tree-icon.xm-hidden + .top-line {
+  top: 19px;
+}
+xm-select[size='large'] .item--divided {
+  margin: 10px;
+}
+xm-select {
+  min-height: 36px;
+  line-height: 36px;
+}
+xm-select .xm-input {
+  height: 36px;
+}
+xm-select .xm-label .scroll .label-content {
+  line-height: 30px;
+}
+xm-select .xm-label .xm-label-block {
+  height: 26px;
+  line-height: 26px;
+}
+xm-select .xm-body .xm-option .xm-option-icon {
+  height: 18px;
+  width: 18px;
+  font-size: 18px;
+}
+xm-select .xm-paging > span {
+  height: 30px;
+  line-height: 30px;
+}
+xm-select .xm-tree .left-line {
+  height: 100%;
+  bottom: 18px;
+}
+xm-select .xm-tree .left-line-group {
+  height: calc(100% - 36px);
+}
+xm-select .xm-tree .xm-tree-icon.xm-hidden + .top-line {
+  top: 17px;
+}
+xm-select .item--divided {
+  margin: 9px;
+}
+xm-select[size='small'] {
+  min-height: 32px;
+  line-height: 32px;
+}
+xm-select[size='small'] .xm-input {
+  height: 32px;
+}
+xm-select[size='small'] .xm-label .scroll .label-content {
+  line-height: 26px;
+}
+xm-select[size='small'] .xm-label .xm-label-block {
+  height: 22px;
+  line-height: 22px;
+}
+xm-select[size='small'] .xm-body .xm-option .xm-option-icon {
+  height: 16px;
+  width: 16px;
+  font-size: 16px;
+}
+xm-select[size='small'] .xm-paging > span {
+  height: 26px;
+  line-height: 26px;
+}
+xm-select[size='small'] .xm-tree .left-line {
+  height: 100%;
+  bottom: 16px;
+}
+xm-select[size='small'] .xm-tree .left-line-group {
+  height: calc(100% - 32px);
+}
+xm-select[size='small'] .xm-tree .xm-tree-icon.xm-hidden + .top-line {
+  top: 15px;
+}
+xm-select[size='small'] .item--divided {
+  margin: 8px;
+}
+xm-select[size='mini'] {
+  min-height: 28px;
+  line-height: 28px;
+}
+xm-select[size='mini'] .xm-input {
+  height: 28px;
+}
+xm-select[size='mini'] .xm-label .scroll .label-content {
+  line-height: 22px;
+}
+xm-select[size='mini'] .xm-label .xm-label-block {
+  height: 18px;
+  line-height: 18px;
+}
+xm-select[size='mini'] .xm-body .xm-option .xm-option-icon {
+  height: 14px;
+  width: 14px;
+  font-size: 14px;
+}
+xm-select[size='mini'] .xm-paging > span {
+  height: 22px;
+  line-height: 22px;
+}
+xm-select[size='mini'] .xm-tree .left-line {
+  height: 100%;
+  bottom: 14px;
+}
+xm-select[size='mini'] .xm-tree .left-line-group {
+  height: calc(100% - 28px);
+}
+xm-select[size='mini'] .xm-tree .xm-tree-icon.xm-hidden + .top-line {
+  top: 13px;
+}
+xm-select[size='mini'] .item--divided {
+  margin: 7px;
+}
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+.video-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+.video-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.prompt-text {
+    position: absolute;
+    /* bottom: 0; */
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6), transparent);
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.video-item:hover .prompt-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+.prompt-text {
+    text-align: left;
+    /* text-align: center; */
+    /* margin-top: 10px; */
+}
+.layui-form-pane xm-select {
+  margin: -1px -1px -1px 0;
+}
+
+</style></head>
+
+
+
+<body>
+
+
+<!-- <section class="hero">
+  <div class="hero-body">
+      <div class="container is-fullhd">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="font-family: 'Raleway', sans-serif; font-weight: 150;"><span class="rainbow-word">ShotDirector:</span> Directorially Controllable Multi-Shot Video Generation with Cinematographic Transitions</h1>
+          <div class="is-size-5 publication-authors">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+<section class="hero">
+  <div class="hero-body">
+<!--    <div class="container is-max-desktop">-->
+      <div class="container is-fullhd">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title" style="font-family: 'Raleway', sans-serif; font-weight: 150;"><span class="rainbow-word">ShotDirector:</span> Directorially Controllable Multi-Shot Video Generation with Cinematographic Transitions</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <p><a href="https://scholar.google.com/citations?hl=zh-CN&user=TbZZSVgAAAAJ">Xiaoxue Wu</a><sup>1,2*</sup>,</p></span>
+            <span class="author-block">
+              <p><a href="https://scholar.google.com/citations?user=3fWSC8YAAAAJ">Xinyuan Chen</a><sup>2&dagger;</sup>,</p></span>
+            <span class="author-block">
+              <p><a href="https://wyhsirius.github.io/">Yaohui Wang</a><sup>2</sup>,</p></span>
+            <span class="author-block">
+              <p><a href="https://scholar.google.com.hk/citations?user=gFtI-8QAAAAJ&amp;hl=zh-CN">Yu Qiao</a><sup>2&dagger;</sup></p></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Fudan University&nbsp</span>
+            <span class="author-block"><sup>2</sup>Shanghai Artificial Intelligence Laboratory&nbsp</span>
+          </div>
+
+            <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>Work done during internship at Shanghai AI Laboratory</span> <span class="author-block"><sup>&dagger;</sup>Corresponding author</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                  </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" 
+                          alt="Hugging Face" 
+                          style="height:1em; vertical-align:middle;">
+                    </span>     
+                  <span>Weights</span>
+                  </a>
+              </span>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="card">
+    <h2><span class="rainbow-word">TL;DR</span></h2>
+    <p>
+      We introduce ShotDirector, a controllable multi-shot video generation framework that <b>models diverse cinematographic transition types</b> by combining parameter-level camera control with editing-pattern-aware prompting. Through 6-DoF camera conditioning and a shot-aware mask mechanism, it enables <b>intentional, film-like transitions</b> beyond simple shot changes.
+    </p>
+  </div>
+</section>
+<div style="height: 40px;"></div>
+
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="is-centered has-text-centered">
+    <div class="is-max-width container" style="max-width: 1750px;">
+      <h3 class="title is-3">⏩ Cut-in</h3>
+      <div class="video-grid">
+        <div class="video-item">
+          <p class="prompt-text">
+            <b>[Subject]</b> [Woman 1] a young artist with wavy brown hair in a paint-stained apron. <br>
+            <b>[General]</b> The scene portrays a quiet morning in her studio as she paints in focused solitude. <br>
+            <b>[Transition]</b> Cut-in. Transition from the wide studio view into a close-up of her brush and canvas, emphasizing artistic detail.<br>
+            <b>[Shot 1]</b> [Woman 1] sits in a sunlit art studio surrounded by easels and canvases; wide shot, soft ambient light, artistic clutter, pastel tones, calm creative atmosphere. <br>
+            <b>[Shot 2]</b> [Woman 1]'s hand moves a fine brush over a canvas, revealing delicate floral strokes; close-up, raking light, rich pigment texture, painterly aesthetic.
+          </p>
+          <video  id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/art_18_26_65__compressed_.mp4" type="video/mp4">
+          </video>
+          
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Death.To.Smoochy.2002.1080p.WEBRip.x264.AAC5.1-[YTS.MX]_190_18_26_1021__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Man 1] a hooded man in a bulky gray parka, face pressed to a brick seam. <br>
+            <b>[General]</b> [Man 1] lies on concrete under a stairwell between green-painted and red brick walls, intently peering through a narrow gap or doorway. <br>
+            <b>[Transition]</b> Cut-in. Cut from a wider establishing shot of [Man 1] lying under the stairs to a close-up on his head and coat pressed into the brick seam, intensifying detail and focus.<br>
+            <b>[Shot 1]</b> [Man 1] sprawled on the floor beside a stairwell and green brick wall, facing a red-brick corner. Wide/medium-wide framing, low-angle, low-key lighting, muted greens and reds. <br>
+            <b>[Shot 2]</b> [Man 1]'s hooded head and shoulder pressed into the red brick seam in tight close-up. Close framing, shallow depth, intimate perspective, directional light emphasizing texture and fabric.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Wish.For.Christmas.2016.1080p.BluRay.x264-[YTS.AG]_303_18_26_666__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Woman 1] a woman with long wavy hair wearing a patterned knit hat, bright red scarf, black coat and jeans. <br>
+            <b>[General]</b> [Woman 1] walks down a dim, tree-lined sidewalk at dusk, hands in pockets, with blurred car headlights and traffic lights behind her. <br>
+            <b>[Transition]</b> Cut-in. The edit tightens from a wider, full-body sidewalk view to a closer medium-close portrait of [Woman 1], increasing intimacy and isolating her against blurred lights.<br>
+            <b>[Shot 1]</b> [Woman 1] is shown full-body walking toward camera on a sidewalk, coat and scarf visible. Wide/medium-long shot, eye-level, moderate depth, cool dusk lighting, soft bokeh. <br>
+            <b>[Shot 2]</b> [Woman 1] is framed in a tighter head-and-shoulders shot, neutral expression visible. Medium close-up, eye-level, shallow depth of field, low-key dusk light, stronger background bokeh.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/train_18_26_65__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Woman 1] a young traveler with shoulder-length black hair wearing a long beige coat. <br>
+            <b>[General]</b> The scene captures a moment of anticipation before departure on a misty morning platform. <br>
+            <b>[Transition]</b> Cut-in. Transition from the wide platform view into a close-up of her hand gripping the bag, focusing on quiet emotional tension within the stillness.<br>
+            <b>[Shot 1]</b> [Woman 1] stands on a quiet train platform as the morning train arrives; wide shot, cool dawn light, gentle fog, balanced composition, muted tones. <br>
+            <b>[Shot 2]</b> [Woman 1]'s fingers tighten around the strap of her leather bag; close-up, shallow depth of field, soft sidelight glinting off the metal buckle, subtle tension.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Prince.Andrew.Banished.2022.1080p.WEBRip.x264.AAC5.1-[YTS.MX]_855_18_26_241102__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Woman 1] an older woman with a red bob haircut wearing a floral dress and a pendant necklace. <br>
+            <b>[General]</b> [Woman 1] sits in a wood-paneled study speaking to camera; first frame shows a seated, gesturing view, second frame tightens to a close-up of her face. <br>
+            <b>[Transition]</b> Cut-in. Cut from a medium-wide, gesturing shot of [Woman 1] in the study to a closer head-and-shoulders view, increasing intimacy and revealing facial expression details.<br>
+            <b>[Shot 1]</b> [Woman 1] seated in a leather chair gesturing with hands beside a round table and lamp; medium-wide shot, eye-level, warm practical lighting, shallow focus, rich wood tones. <br>
+            <b>[Shot 2]</b> [Woman 1] close-up, mid-head-and-shoulders as she speaks, expressive facial detail; close-up framing, tight focus on face, soft warm lighting, blurred background, eye-level.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/The.Taking.of.Deborah.Logan.2014.1080p.BluRay.x264.YIFY_15_18_26_65__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Woman 1] an elderly woman with grey hair, gaunt features, wearing a patterned hospital gown, covered by a pink blanket. <br>
+            <b>[General]</b> [Woman 1] lies propped in a clinical hospital room, mouth open and vulnerable, monitored equipment and bed rails visible; cold, desaturated light emphasizes frailty. <br>
+            <b>[Transition]</b> Cut-in. Cut from a medium-wide view of [Woman 1] in the bed to a close-up of her face, tightening focus to heighten vulnerability and emotional detail.<br>
+            <b>[Shot 1]</b> [Woman 1] reclines in a hospital bed seen from a medium-wide/high-angle view, showing rails, monitor, and blanket. Cool desaturated color, even clinical lighting, moderate depth. <br>
+            <b>[Shot 2]</b> [Woman 1] fills the frame in a tight close-up, mouth open and details of wrinkles visible. Close-up, shallow focus, low-key cool light, intimate, slightly tilted angle.
+          </p>
+        </div>
+      </div>
+
+      <h3 class="title is-3">🔁🎬 Shot/Reverse Shot</h3>
+      <div class="video-grid">
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Leatherheads.2008.1080p.BluRay.x264.AAC5.1-[YTS.MX]_387_18_26_65__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Woman 1] a blonde woman in a red-orange vintage coat with a pearl necklace, seated at a desk; [Man 1] a dark-haired man in a checked suit and tie, neatly groomed.<br>
+            <b>[General]</b> [Woman 1] sits at a wood-paneled office desk, glancing sideways across ornate brass desk objects; [Man 1] sits opposite, listening attentively in a muted, warm period interior. <br>
+            <b>[Transition]</b> Shot/Reverse Shot. Cut from the medium, desk-framed shot of [Woman 1] to a tighter reverse close-up on [Man 1], switching perspective to capture his reaction. <br>
+            <b>[Shot 1]</b> [Woman 1] seated at the desk, turned to the right as if speaking; medium shot, eye-level framing, moderate depth of field, warm low-key lighting, muted vintage colors. <br>
+            <b>[Shot 2]</b> [Man 1] shown in a tight medium close-up, looking offscreen toward [Woman 1]; sharp facial focus, soft warm illumination, eye-level angle, subtle contrast and color grading.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Looney.Tunes.Back.in.Action.2003.1080p.BluRay.x264.YIFY_44_18_26_804__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Man 1] a male security officer in a blue uniform with dark hair, a badge and radio. [Woman 1] a blonde woman in a purple blouse with curled hair. <br>
+            <b>[General]</b> [Man 1] and [Woman 1] converse on a tree-lined street near cafe seating; he offers a mild, knowing smile while she responds with a concerned, intense expression. <br>
+            <b>[Transition]</b> Shot/Reverse Shot. The cut shifts perspective from a medium frame highlighting [Man 1]'s expression to a reverse medium close-up of [Woman 1], showing her reaction and preserving conversational continuity. <br>
+            <b>[Shot 1]</b> [Man 1] faces [Woman 1], smiling slightly, badge and radio visible. Medium shot, eye-level framing, shallow focus on his face, natural daylight, warm saturated colors, soft background. <br>
+            <b>[Shot 2]</b> [Woman 1] reacts with tense, focused expression, [Man 1]'s shoulder partially visible. Medium close-up, eye-level, sharp focus on her face, soft daylight, neutral tones, intimate framing.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/As.It.Is.In.Heaven.2004.1080p.BluRay.x264-[YTS.AM]_95_18_26_1102__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Man 1] a middle-aged man with graying hair wearing a dark fur-collared coat and light blue shirt. [Woman 1] a young blonde woman wearing silver tinsel. <br>
+            <b>[General]</b> [Man 1] stands at a store counter while [Woman 1] in festive garb hands him a small box; holiday shelves and decorations fill the background. <br>
+            <b>[Transition]</b> Shot/Reverse Shot. Cuts from a medium-close of [Man 1] to a reverse medium-close on [Woman 1] offering the item, maintaining spatial continuity and conversational pacing. <br>
+            <b>[Shot 1]</b> [Man 1] is framed chest-up at the counter, looking down with Christmas displays behind him. Medium close, eye-level, soft fluorescent light, muted colors, shallow focus. <br>
+            <b>[Shot 2]</b> [Woman 1] leans forward presenting a small box to [Man 1], silver tinsel framing her face. Medium-close, slight high angle, soft fill light, warm highlights, focused on hands and face.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Smitty.2012.1080p.BluRay.x264-[YTS.AM]_629_18_26_65_trans_compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Man 1] a man with dark wavy hair wearing a casual button shirt. [Woman 1] a woman with long straight hair and a braided crown, smiling. <br>
+            <b>[General]</b> [Man 1] and [Woman 1] converse at an evening fair, exchanging warm smiles as colorful bokeh lights and blurred crowds form a soft, festive background. <br>
+            <b>[Transition]</b> Shot/Reverse Shot. The edit alternates perspectives between speakers: a medium-close of [Man 1] cuts to the reverse medium-close of [Woman 1], maintaining conversational rhythm and spatial continuity. <br>
+            <b>[Shot 1]</b> [Man 1] faces the camera slightly right, mid-close framing; shallow focus isolates him, warm dusk lighting, soft color palette, eye-level angle, visible bokeh background. <br>
+            <b>[Shot 2]</b> [Woman 1] smiles in profile toward [Man 1], mid-close framing; shallow depth-of-field keeps her sharp, warm ambient light, saturated bokeh highlights, eye-level, intimate feel.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Meet.Me.In.Montenegro.2014.1080p.WEBRip.x264.AAC5.1-[YTS.MX]_288_18_26_1102__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Woman 1] a woman wearing a red knit hat and matching red scarf. [Man 1] a middle-aged man with glasses wearing a blue sweater. <br>
+            <b>[General]</b> [Woman 1] and [Man 1] sit outdoors in a quiet conversation; she looks down pensively while he watches her closely, suggesting an intimate emotional exchange. <br>
+            <b>[Transition]</b> Shot/Reverse Shot. The cut alternates perspective from a close, introspective shot of [Woman 1] to a responsive medium close-up of [Man 1], emphasizing dialogue and emotional reaction. <br>
+            <b>[Shot 1]</b> [Woman 1] in a close-up, head bowed slightly, wearing a red hat and scarf. Close-up, shallow focus, soft natural light, muted background, slight high-angle feel. <br>
+            <b>[Shot 2]</b> [Man 1] in a medium close-up, looking surprised or attentive, wearing glasses and blue sweater. Medium close-up, eye-level, sharp focus on face, natural lighting, subdued colors.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Backwards.2012.1080p.WEBRip.x264.AAC5.1-[YTS.MX]_446_18_26_103_trans.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Woman 1] a short-haired athlete wearing a navy "Athletes Row" shirt. [Woman 2] a longer-haired woman in a teal tank top. <br>
+            <b>[General]</b> [Woman 1] and [Woman 2] stand close in a blue-tinted locker room, exchanging tense dialogue with intense eye contact and focused expressions. <br>
+            <b>[Transition]</b> Shot/Reverse Shot. The edit switches perspective from [Woman 1] to [Woman 2], alternating viewpoints in a dialogue exchange while preserving spatial continuity and emotional tension. <br>
+            <b>[Shot 1]</b> [Woman 1] faces the camera talking to the blurred back of [Woman 2]. Medium close-up, shallow focus on subject, cool lighting, eye-level, tight framing. <br>
+            <b>[Shot 2]</b> [Woman 2] looks intently at [Woman 1], her expression serious; over-the-shoulder of [Woman 1] visible. Medium close-up, sharp focus, rim backlighting, cool tones.
+          </p>
+        </div>
+
+      </div>
+
+      <h3 class="title is-3">⏪ Cut-out</h3>
+      <div class="video-grid">
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Solitary.2016.1080p.WEBRip.x264.AAC5.1-[YTS.MX]_146_18_26_103__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Man 1] a bald man with a short beard, wearing an orange prison jumpsuit and handcuffs, with a large tattoo on his left forearm. <br>
+            <b>[General]</b> [Man 1] sits at an interrogation table in a cinderblock-walled room; first frame tightly shows his face, then a wider frame reveals his handcuffed hands and tattoo. <br>
+            <b>[Transition]</b> Cut-out. The edit moves from a tight facial close-up to a wider medium shot revealing context handcuffs, tattoo, and the interrogation setting broadening visual information. <br>
+            <b>[Shot 1]</b> [Man 1] close-up on his face, looking down and slightly left. Tight framing, shallow focus, cool fluorescent lighting, muted color palette, slight high-angle composition. <br>
+            <b>[Shot 2]</b> [Man 1] medium shot showing torso, tattooed forearm, and handcuffed hands on the table. Wider framing, deeper focus, flat lighting, neutral color, eye-level angle.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Mannequin.1987.1080p.BluRay.x264-[YTS.AG]_231_18_26_65__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Officer 1] a uniformed policeman in a dark blue uniform and cap, crouching with a tense expression. [Dog 1] a tan-and-white English bulldog wearing a studded collar. <br>
+            <b>[General]</b> [Officer 1] holds [Dog 1] on a leash inside a marble-floored, columned interior, peering down a corridor, appearing alert and ready. <br>
+            <b>[Transition]</b> Cut-out. The edit moves from a tighter, nearer view of [Officer 1] restraining [Dog 1] to a wider shot that reveals the columned hall and spatial context. <br>
+            <b>[Shot 1]</b> [Officer 1] crouches and grips [Dog 1]'s collar in a closer view; close-medium shot, low angle, sharp focus on faces, even interior lighting, muted colors. <br>
+            <b>[Shot 2]</b> [Officer 1] and [Dog 1] are framed farther down the hall; wide shot, low camera angle, deep focus, reflective marble floor, cool muted lighting.
+          </p>
+        </div>
+
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Beethovens.Treasure.Tail.2014.1080p.BluRay.x264.YIFY_753_18_26_103_trans_compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Boy 1] a brown-haired boy in a plaid shirt and red hoodie. [Girl 1] a brown-haired girl in a purple cardigan holding a blanket. [Dog 1] a large brown-and-white Saint Bernard. <br>
+            <b>[General]</b> [Boy 1] looks down with concern while [Girl 1] stands nearby smiling and holding a blanket; [Dog 1] sniffs the ground in a churchyard setting, daytime. <br>
+            <b>[Transition]</b> Cut-out. Cut from a tight close-up of [Boy 1] to a medium-wide shot revealing [Girl 1], [Dog 1], and the surrounding churchyard, expanding context and showing interaction. <br>
+            <b>[Shot 1]</b> [Boy 1] close-up, looking downward with a worried expression. Tight framing, shallow focus on his face, soft natural daylight, warm muted color palette, eye-level camera. <br>
+            <b>[Shot 2]</b> [Boy 1] and [Girl 1] stand beside [Dog 1] in a medium-wide shot showing the churchyard. Balanced composition, deeper focus, even daylight, natural warm tones, neutral camera angle.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/d41i4djyp2eo9x2uo_Fat.Fiction.2020.1080p.WEBRip.x264.AAC-[YTS.MX]_463_18_26_96_trans_compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Man 1] a middle-aged man with salt-and-pepper hair and a trimmed goatee wearing a burgundy/red dress shirt. <br>
+            <b>[General]</b> [Man 1] speaks during an interview in a warmly lit living room, positioned against blurred wall decor and a couch, conveying a relaxed, conversational tone. <br>
+            <b>[Transition]</b> Cut-out. Cut from a close, intimate head-and-shoulders shot of [Man 1] to a wider medium shot revealing environment, expanding context while keeping conversational continuity. <br>
+            <b>[Shot 1]</b> [Man 1] tight close-up on face and shoulders as he talks. Framing: head-and-shoulders. Shallow focus, soft warm lighting, eye-level angle, intimate, muted color. <br>
+            <b>[Shot 2]</b> [Man 1] medium-wide seated shot showing more of the living room and wall decor. Wider framing, slightly deeper focus, soft warm light, eye-level, contextual composition.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Kevin.Smith.Silent.But.Deadly.2018.1080p.BluRay.x264.AAC-[YTS.MX]_110_18_26_96_trans_compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Man 1] a bearded man wearing a black hockey jersey and a white backwards cap. <br>
+            <b>[General]</b> [Man 1] performs stand-up on stage holding a microphone; one frame is a close frontal portrait, the other shows his back with "SMITH 37" and the audience. <br>
+            <b>[Transition]</b> Cut-out. Cut from a medium close frontal portrait of [Man 1] to a wider rear full-body shot, increasing distance and changing angle to reveal his jersey and audience. <br>
+            <b>[Shot 1]</b> [Man 1] faces the camera holding a microphone in a head-and-shoulders shot. Medium close-up, eye-level, sharp focus on face, spotlighting, dark background, warm tones. <br>
+            <b>[Shot 2]</b> [Man 1] is seen from behind in a full-body wide shot showing "SMITH 37" on his jersey, stage stool, and audience. Wide framing, deeper focus, spotlighting, high contrast, slightly low angle.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Chairman.Of.The.Board.1998.1080p.WEBRip.x264-[YTS.AM]_523_18_26_103_trans_compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Man 1] a man with curly red hair in a suit. [Piata 1] a tall blue piata-like creature with orange accents. <br>
+            <b>[General]</b> [Man 1] energetically performs beside [Piata 1] on a conference table in a festively decorated boardroom while businessmen watch, creating a chaotic, comedic scene. <br>
+            <b>[Transition]</b> Cut-out. Cuts from a tight, energetic close-up of [Man 1] and [Piata 1] to a wider establishing shot that reveals the full boardroom, audience, and props. <br>
+            <b>[Shot 1]</b> [Man 1] mid-shout beside [Piata 1], tightly framed on faces and upper torsos. Close-up, shallow focus, overhead fluorescent light, saturated colors, eye-level, expressive movement. <br>
+            <b>[Shot 2]</b> [Man 1] sitting on the conference table with [Piata 1] in foreground and businessmen around. Wide shot, deep focus, flat fluorescent lighting, low tabletop camera angle, vivid set.
+          </p>
+        </div>
+
+      </div>
+
+      <h3 class="title is-3">🎥🔄 Multi-Angle</h3>
+      <div class="video-grid">
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/A.Kid.For.Two.Farthings.1955.1080p.BluRay.x264-[YTS.LT]_259_18_26_1021__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Man 1] an older man in a fedora, pinstripe suit and polka-dot bow tie, with pronounced forehead wrinkles and a cheek mole. <br>
+            <b>[General]</b> [Man 1] leans forward inside a dim, cluttered interior, intently watching a small vintage television showing black-and-white dancers, conveying focused curiosity and nostalgia. <br>
+            <b>[Transition]</b> Multi-Angle. Cuts from an intimate close-up of [Man 1]'s face to a wider over-the-shoulder view revealing him watching the vintage television, expanding context and spatial orientation. <br>
+            <b>[Shot 1]</b> [Man 1] close-up of his wrinkled face and fedora brim, eyes partially closed. Tight framing, shallow focus, soft interior lighting, warm color saturation, slight high-angle. <br>
+            <b>[Shot 2]</b> [Man 1] seen from behind leaning toward a small tabletop black-and-white TV showing dancers. Medium over-the-shoulder, deeper focus, low-key lighting, muted palette, eye-level angle.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Sunny.Side.2017.1080p.BluRay.x264-[YTS.AM]_594_18_26_1021__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Woman 1] a brunette woman wearing sunglasses on her head and a light blue lace top. [Man 1] a middle-aged man in a blue shirt. [Man 2] a man in a white shirt with blue stripes holding a glass. <br>
+            <b>[General]</b> [Woman 1] greets guests warmly, reaching in for a hug with a broad smile while [Man 2] watches with a drink and [Man 1] receives the embrace under a tented outdoor event. <br>
+            <b>[Transition]</b> Multi-Angle. Camera moves to the opposite side of the interaction, cutting from a frontal view of [Woman 1] reaching out to an over-the-shoulder perspective focused on [Man 1], maintaining continuity. <br>
+            <b>[Shot 1]</b> [Woman 1] faces the camera smiling and reaching forward; [Man 2] stands slightly behind holding a glass. Medium close-up, eye-level, shallow focus, natural daylight, vibrant colors, slight motion blur. <br>
+            <b>[Shot 2]</b> [Woman 1] is seen from behind as she embraces [Man 1], whose face responds; background guests softly blurred. Over-the-shoulder mid shot, eye-level, soft daylight, intimate framing, warm tones.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Angels.Wild.Women.1972.1080p.BluRay.x264.AAC-[YTS.MX]_400_18_26_96__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Rider 1] a motorcycle rider with a visible hand gripping chrome handlebars. [Car 1] a light-colored vintage station wagon. <br>
+            <b>[General]</b> [Rider 1] pursues [Car 1] along a sunlit desert highway; handlebars foreground, station wagon midground, dust trailing, conveying high-speed chase across wide-open heat-hazed terrain. <br>
+            <b>[Transition]</b> Multi-Angle. Cuts from an intimate, handlebar-level perspective alongside [Car 1] to a wider rear-trailing shot, shifting angle to expose road, spacing, and chase context. <br>
+            <b>[Shot 1]</b> [Rider 1]'s hand and motorcycle handlebars dominate frame with [Car 1] alongside. Close low-angle, tight framing, slight motion blur, harsh midday light, saturated blues. <br>
+            <b>[Shot 2]</b> [Car 1] centered trailing down road, dust plume visible. Wide medium-long shot, eye-level, deeper focus, balanced daylight, cooler desaturated tones, reveals open highway.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/The.Incredible.2-Headed.Transplant.1971.720p.BluRay.x264.AAC-[YTS.MX]_303_18_26_928__compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Woman 1] a woman with short platinum-blonde hair wearing a pale sheer nightgown. <br>
+            <b>[General]</b> [Woman 1] appears anxious in a dim interior hallway, moving toward and inspecting a closed apartment door, creating a tense, suspenseful atmosphere. <br>
+            <b>[Transition]</b> Multi-Angle. Cut from a closer frontal shot of [Woman 1] to a wider rear-facing shot revealing the door, expanding spatial context and heightening suspense. <br>
+            <b>[Shot 1]</b> [Woman 1] is shown in a close medium frontal shot, tense expression with strong shadowing; tight framing, shallow focus, low-key overhead lighting, muted tones, eye-level. <br>
+            <b>[Shot 2]</b> [Woman 1] is seen from behind facing a closed door; wider medium shot with more negative space, cool low-key lighting, deeper focus, off-center composition, slightly high angle.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/The.Boy.In.The.Plastic.Bubble.1976.1080p.WEBRip.x264.AAC-[YTS.MX]_444_18_26_666_trans_compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Person 1] a person in an orange protective suit with a clear face visor. [Man 1], [Woman 1] two homeowners watching on a porch. <br>
+            <b>[General]</b> [Person 1] smiles behind the visor while standing outside a suburban house; [Man 1] and [Woman 1] watch from the doorway, amused and curious. <br>
+            <b>[Transition]</b> Multi-Angle. Cut from a close-up of [Person 1]'s smiling face to a wider shot revealing the full protective suit, backpack apparatus, and homeowners' reactions on the porch. <br>
+            <b>[Shot 1]</b> [Person 1]'s face fills the frame behind the clear visor, smiling; close-up, tight framing, shallow focus, natural daylight, warm color, slight low-angle reflection on visor. <br>
+            <b>[Shot 2]</b> [Person 1] is seen from behind with a backpack unit approaching the house as [Man 1] and [Woman 1] stand together; medium-long shot, eye-level, deeper focus, daylight.
+          </p>
+        </div>
+
+        <div class="video-item">
+          <video id="myVideo" controls="" preload="metadata" autoplay="" muted="" loop="" playsinline="">
+            <source src="./static/video/Hot.Dog.2018.1080p.BluRay.x264.AAC5.1-[YTS.MX]_336_18_26_65_trans_compressed_.mp4" type="video/mp4">
+          </video>
+          <p class="prompt-text">
+            <b>[Subject]</b> [Man 1] a bald middle-aged man in a black suit. [Crew 1] a cluster of photographers, camera operators and a boom mic. <br>
+            <b>[General]</b> [Man 1] marches through a tree-lined park while [Crew 1] swarms him, cameras and boom mics thrust forward, a tense confrontation in cold, overcast light. <br>
+            <b>[Transition]</b> Transition Label: Multi-Angle. <br>
+            <b>[Shot 1]</b> [Man 1] strides left-center through a crowd of reporters; trees fill the background. Wide/medium-long shot, eye-level, muted desaturated colors, soft overcast lighting, moderate depth. <br>
+            <b>[Shot 2]</b> [Man 1] in a tighter medium-close, shouting as [Crew 1] and cameras press in from the right. Medium-close, eye-level, sharp focus on expression, handheld immediacy, cool tones.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-fullhd">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Shot transitions play a pivotal role in multi-shot video generation, as they determine the overall narrative expression and the directorial design of visual storytelling. However, recent progress has primarily focused on low-level visual consistency across shots, neglecting how transitions are designed and how cinematographic language contributes to coherent narrative expression. This often leads to mere sequential shot changes without intentional film-editing patterns. To address this limitation, we propose ShotDirector, an efficient framework that integrates parameter-level camera control and hierarchical editing-pattern-aware prompting. Specifically, we adopt a camera control module that incorporates 6-DoF poses and intrinsic settings to enable precise camera information injection. In addition, a shot-aware mask mechanism is employed to introduce hierarchical prompts aware of professional editing patterns, allowing fine-grained control over shot content. Through this design, our framework effectively combines parameter-level conditions with high-level semantic guidance, achieving film-like controllable shot transitions. To facilitate training and evaluation, we construct ShotWeaver40K, a dataset that captures the priors of film-like editing patterns, and develop a set of evaluation metrics for controllable multi-shot video generation. Extensive experiments demonstrate the effectiveness of our framework.
+          </p>
+        </div>
+        <div style="text-align: center;">
+          <img src="static/teaser/Method.png" alt="Figure"  style="max-width: 100%; height: auto; width: 1400px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero comparison">
+  <div class="hero-body">
+    <center>
+      <h2 class="title is-3"> Qualitative Comparisons</h2>
+      <div style="height: 20px; text-align: center;"></div>
+    </center>
+    
+    <!-- Case 1 -->
+    <div class="box">
+      <!-- Script 描述 -->
+      <h4 class="title is-5">Script 1 (Cut-in) </h4>
+      <p style="margin-bottom: 15px; font-family: Geneva;">
+        Cut from a medium-wide group shot including a group of men to a closer, intimate portrait of a man of them, highlighting his expression and attendants. <span class="is-size-7">camera moves right-forward, rotates left 90°</span>
+      </p>
+      <div class="columns is-multiline is-mobile">
+        <!-- Method 1 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Ours</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-in/ShotDirector.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Phantom</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-in/Phatom.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>CineTrans</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-in/CineTrans2.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>StoryDiffusion</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-in/StoryDiffusion.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Mask2DiT</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-in/Mask2DiT.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>HunyuanVideo</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-in/Hunyuan.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Wan2.2</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-in/Wan2.2.mp4" type="video/mp4">
+          </video>
+        </div>    
+
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>SynCamMaster</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-in/SynCamMaster.mp4" type="video/mp4">
+          </video>
+        </div>     
+
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>ReCamMaster</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-in/ReCamMaster.mp4" type="video/mp4">
+          </video>
+        </div>     
+        <!-- 继续复制，直到 6 列 -->
+      </div>
+    </div>
+    <!-- Case 1 -->
+    <div class="box">
+      <!-- Script 描述 -->
+      <h4 class="title is-5">Script 2 (Shot/Reverse Shot) </h4>
+      <p style="margin-bottom: 15px; font-family: Geneva;">
+        Alternating perspective between a woman and  a man as they converse; cut switches from her mid-close to his medium close-up. <span class="is-size-7"> camera moves left-forward, rotates right 120°</span>
+      </p>
+      
+      <div class="columns is-multiline is-mobile">
+        <!-- Method 1 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Ours</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Shot_Reverse-Shot/ShotDirector.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Phantom</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Shot_Reverse-Shot/Phantom.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>CineTrans</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Shot_Reverse-Shot/CineTran2.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>StoryDiffusion</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Shot_Reverse-Shot/StoryDiffusion.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Mask2DiT</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Shot_Reverse-Shot/Mask2DiT.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>HunyuanVideo</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Shot_Reverse-Shot/Hunyuan.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Wan2.2</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Shot_Reverse-Shot/Wan2.2.mp4" type="video/mp4">
+          </video>
+        </div>    
+
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>SynCamMaster</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Shot_Reverse-Shot/SynCamMaster.mp4" type="video/mp4">
+          </video>
+        </div>     
+
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>ReCamMaster</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Shot_Reverse-Shot/ReCamMaster.mp4" type="video/mp4">
+          </video>
+        </div>     
+        <!-- 继续复制，直到 6 列 -->
+      </div>
+    </div>
+    <!-- Case 1 -->
+    <div class="box">
+      <!-- Script 描述 -->
+      <h4 class="title is-5">Script 3 (Cut-out) </h4>
+      <p style="margin-bottom: 15px; font-family: Geneva;">
+        The sequence pulls back from a medium close-up of a man inspecting lighter and smoking to a wider shot that reveals his full figure and the surrounding stoop. <span class="is-size-7">camera moves backward, no rotation</span>
+      </p>
+      
+      <div class="columns is-multiline is-mobile">
+        <!-- Method 1 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Ours</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-out/ShotDirector.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Phantom</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-out/Phatom.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>CineTrans</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-out/CineTrans1.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>StoryDiffusion</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-out/StoryDiffusion.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Mask2DiT</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-out/Mask2DiT.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      <!-- </div>
+      <div class="columns is-multiline is-mobile">   -->
+    
+      
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>HunyuanVideo</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-out/Hunyuan.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Wan2.2</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-out/Wan2.2.mp4" type="video/mp4">
+          </video>
+        </div>    
+
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>SynCamMaster</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-out/SynCamMaster.mp4" type="video/mp4">
+          </video>
+        </div>    
+
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>ReCamMaster</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Cut-out/ReCamMaster.mp4" type="video/mp4">
+          </video>
+        </div>    
+        
+        <!-- 继续复制，直到 6 列 -->
+      </div>
+    </div>
+    <!-- Case 1 -->
+    <div class="box">
+      <!-- Script 描述 -->
+      <h4 class="title is-5">Script 4 (Multi-Angle) </h4>
+      <p style="margin-bottom: 15px; font-family: Geneva;">
+        Cut between two camera angles of a man: a side biased medium-close emphasizing hands and object, then a frontal medium revealing silhouette and surroundings. <span class="is-size-7">camera moves left-backward, rotates right 45°</span>
+      </p>
+      
+      <div class="columns is-multiline is-mobile">
+        <!-- Method 1 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Ours</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Multi-Angle/ShotDirector.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Phantom</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Multi-Angle/Phantom.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>CineTrans</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Multi-Angle/CineTrans1.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>StoryDiffusion</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Multi-Angle/StoryDiffusion.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Mask2DiT</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Multi-Angle/Mask2DiT.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>HunyuanVideo</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Multi-Angle/Hunyuan.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+        <!-- Method 2 -->
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>Wan2.2</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Multi-Angle/Wan2.2.mp4" type="video/mp4">
+          </video>
+        </div>    
+
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>SynCamMaster</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Multi-Angle/SynCamMaster.mp4" type="video/mp4">
+          </video>
+        </div>    
+        
+        <div class="column is-one-sixth has-text-centered">
+          <p><b>ReCamMaster</b></p>
+          <video id="myVideo" controls autoplay muted playsinline loop style="width: 100%; height: auto; border-radius: 6px;">
+            <source src="./static/comparison/Multi-Angle/ReCamMaster.mp4" type="video/mp4">
+          </video>
+        </div>    
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>xxxxxxxxxxxxxxxxxxxxx</code></pre>
+  </div>
+</section> -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            Website adapted from the following <a rel="license" href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+ <script>
+var videos = document.getElementsByClassName("clickplay");
+for (var i = 0; i < videos.length; i++) {
+  videos[i].addEventListener("click", function() {
+    this.play();
+  });
+  videos[i].addEventListener("ended", function() {
+    this.pause();
+    this.currentTime = 0;
+  });
+}
+
+const video = document.getElementById("myVideo");
+
+video.addEventListener("loadedmetadata", () => {
+  const duration = video.duration;
+  const randomTime = Math.random() * duration;
+
+  video.currentTime = randomTime;
+  video.play();
+});
+
+</script> 
+  
+
+<iframe id="JVJqw4lV" frameborder="0" src="./settings/translateSandbox.html" style="width: 0px; height: 0px; display: none;"></iframe></body></html>
