@@ -1,19 +1,8 @@
 ## <div align="center"> ShotDirector: Directorially Controllable Multi-Shot Video Generation with Cinematographic Transitions </div>
 
-<div align="center">
 
-<a href="https://arxiv.org/abs/2512.10286">
-  <img src="https://img.shields.io/badge/Paper-arXiv-red" />
-</a>
-<a href="https://uknowsth.github.io/ShotDirector/">
-  <img src="https://img.shields.io/badge/Project-Website-blue" />
-</a>
-<a href="https://huggingface.co/NumlockUknowSth/ShotDirector">
-  <img src="https://img.shields.io/static/v1?label=Model&message=HuggingFace&color=yellow&logo=huggingface" />
-</a>
 
-</div>
-
+[![](https://img.shields.io/static/v1?label=ShotDirector&message=Project&color=blue)](https://uknowsth.github.io/ShotDirector/)   [![](https://img.shields.io/static/v1?label=Paper&message=Arxiv&color=red&logo=arxiv)](https://arxiv.org/abs/2512.10286)   [![](https://img.shields.io/static/v1?label=Code&message=Github&color=purple&logo=github)](https://github.com/UknowSth/ShotDirector)   [![](https://img.shields.io/static/v1?label=Model&message=HuggingFace&color=yellow&logo=huggingface)](https://huggingface.co/NumlockUknowSth/ShotDirector)   
 
 ### 🔥 Updates
 - [x] Release [arXiv paper](https://arxiv.org/pdf/2512.10286) 
