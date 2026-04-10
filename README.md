@@ -15,8 +15,10 @@
 ### 🔥 Updates
 - [x] Release [arXiv paper](https://arxiv.org/pdf/2512.10286) 
 - [x] Release [project page](https://uknowsth.github.io/ShotDirector/)
-- [ ] Release inference code
+- 🎉🎉🎉 Our work has been accepted to CVPR 2026!
+- [x] Release inference code
 - [ ] Release model checkpoints
+- [ ] Release Dataset ShotWeaver
 
 
 ### 📑 Introduction
@@ -24,6 +26,43 @@
 <img width="1130" height="414" alt="Method" src="https://github.com/user-attachments/assets/8d1d69c9-0962-43c5-b4a6-348d2e40c4e1" />
 
 We introduce **ShotDirector**, a controllable multi-shot video generation framework that models diverse cinematographic transition types by combining parameter-level camera control with editing-pattern-aware prompting. Through 6-DoF camera conditioning and a shot-aware mask mechanism, it enables intentional, film-like transitions beyond simple shot changes.
+
+### 📥 Install
+
+### 🖥️ Inference
+
+Clone the Repo
+
+```
+git clone https://github.com/UknowSth/ShotDirector.git
+cd ShotDirector
+```
+
+Set up Environment
+```
+conda create -n shotdirector python==3.11.9
+conda activate shotdirector
+
+pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cu118
+pip install -r requirements.txt
+```
+
+### Checkpoint
+
+Download the weights of [Wan2.1-T2V-1.3B](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B) and the weights required for Shotdirector. Place them in the `·ckpt/` folder as shown in the following diagram.
+
+```
+ckpt/
+│── Wan2.1/Wan2.1-T2V-1.3B/
+│   ├── config.json
+│   ├── diffusion_pytorch_model.safetensors
+│   ├── google/  
+│   │── models_t5_umt5-xxl-enc-bf16.pth
+│   └── Wan2.1_VAE.pth
+│── encoder.pt
+│── model.pt
+│── trans.pt
+```
 
 ### 🖼️ Gallery  
 
