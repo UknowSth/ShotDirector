@@ -5,6 +5,19 @@
       
 [![](https://img.shields.io/static/v1?label=ShotDirector&message=Project&color=blue)](https://uknowsth.github.io/ShotDirector/)   [![](https://img.shields.io/static/v1?label=Paper&message=Arxiv&color=red&logo=arxiv)](https://arxiv.org/abs/2512.10286)   [![](https://img.shields.io/static/v1?label=Code&message=Github&color=purple&logo=github)](https://github.com/UknowSth/ShotDirector)   [![](https://img.shields.io/static/v1?label=Model&message=HuggingFace&color=yellow&logo=huggingface)](https://huggingface.co/NumlockUknowSth/ShotDirector) 
 
+<p><a href="https://scholar.google.com/citations?hl=zh-CN&user=TbZZSVgAAAAJ">Xiaoxue Wu</a><sup>1,2*</sup>,
+<a href="https://scholar.google.com/citations?user=3fWSC8YAAAAJ">Xinyuan Chen</a><sup>2&dagger;</sup>,
+<a href="https://wyhsirius.github.io/">Yaohui Wang</a><sup>2&dagger;</sup>,
+<a href="https://scholar.google.com.hk/citations?user=gFtI-8QAAAAJ&amp;hl=zh-CN">Yu Qiao</a><sup>2&dagger;</sup>
+</p>
+
+
+<span class="author-block"><sup>1</sup>Fudan University</span>
+<span class="author-block"><sup>2</sup>Shanghai Artificial Intelligence Laboratory</span>
+
+<span class="author-block"><sup>*</sup>Work done during internship at Shanghai AI Laboratory</span> <span class="author-block"><sup>&dagger;</sup>Corresponding author</span>
+
+
 </div>
 
 
