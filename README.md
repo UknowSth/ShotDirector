@@ -8,6 +8,9 @@
 <a href="https://uknowsth.github.io/ShotDirector/">
   <img src="https://img.shields.io/badge/Project-Website-blue" />
 </a>
+<a href="https://huggingface.co/NumlockUknowSth/ShotDirector">
+  <img src="https://img.shields.io/static/v1?label=Model&message=HuggingFace&color=yellow&logo=huggingface" />
+</a>
 
 </div>
 
@@ -29,8 +32,6 @@ We introduce **ShotDirector**, a controllable multi-shot video generation framew
 
 ### 📥 Install
 
-### 🖥️ Inference
-
 Clone the Repo
 
 ```
@@ -47,9 +48,9 @@ pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorc
 pip install -r requirements.txt
 ```
 
-### Checkpoint
+### 🤗 Checkpoint
 
-Download the weights of [Wan2.1-T2V-1.3B](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B) and the weights required for Shotdirector. Place them in the `·ckpt/` folder as shown in the following diagram.
+Download the weights of [Wan2.1-T2V-1.3B](https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B) and the weights required for [Shotdirector](https://huggingface.co/NumlockUknowSth/ShotDirector). Place them in the `.ckpt/` folder as shown in the following diagram.
 
 ```
 ckpt/
@@ -63,6 +64,17 @@ ckpt/
 │── model.pt
 │── trans.pt
 ```
+
+### 🖥️ Inference
+
+Use the following instructions to perform model inference:
+
+```
+python generate.py
+```
+
+On the single A800, it takes 15 min to sample a video sample and requires 30GB.
+
 
 ### 🖼️ Gallery  
 
