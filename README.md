@@ -20,7 +20,7 @@
 - [x] Release [project page](https://uknowsth.github.io/ShotDirector/)
 - 🎉🎉🎉 Our work has been accepted to CVPR 2026!
 - [x] Release inference code
-- [ ] Release model checkpoints
+- [x] Release model checkpoints
 - [ ] Release Dataset ShotWeaver
 
 
