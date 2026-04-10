@@ -318,7 +318,6 @@ class WanT2V:
 
             frame_tokens = h * w
             mask_info = [tt - tt // 2, tt // 2]
-            print(f"mask_info:{mask_info}")
             camera_info = camera_info.repeat_interleave(torch.tensor(mask_info), dim=0).unsqueeze(0).to(noise[0].device)
             camera_info_recam = camera_info_recam.repeat_interleave(torch.tensor(mask_info), dim=0).unsqueeze(0).to(noise[0].device)
             all_seq_length = h * w * tt
