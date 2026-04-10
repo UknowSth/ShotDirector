@@ -1,0 +1,263 @@
+{
+    "1": {
+        "prompt": [
+            "<Man 1> close-up of his wrinkled face and fedora brim, eyes partially closed. Tight framing, shallow focus, soft interior lighting, warm color saturation, slight high-angle.",
+            "<Man 1> seen from behind leaning toward a small tabletop black-and-white TV showing dancers. Medium over-the-shoulder, deeper focus, low-key lighting, muted palette, eye-level angle.",
+            "<Man 1> an older man in a fedora, pinstripe suit and polka-dot bow tie, with pronounced forehead wrinkles and a cheek mole. <Man 1> leans forward inside a dim, cluttered interior, intently watching a small vintage television showing black-and-white dancers, conveying focused curiosity and nostalgia. Cut-out. Cuts from an intimate close-up of <Man 1>'s face to a wider over-the-shoulder view revealing him watching the vintage television, expanding context and spatial orientation."
+        ],
+        "extrinsic": [
+            [
+                [
+                    0.9999998807907104,
+                    -0.0003998904721811414,
+                    0.00018630598788149655,
+                    4.85493874293752e-05
+                ],
+                [
+                    0.00039987050695344806,
+                    0.9999999403953552,
+                    0.00010705325257731602,
+                    2.4380124159506522e-05
+                ],
+                [
+                    -0.00018634878506418318,
+                    -0.00010697873949538916,
+                    1.0,
+                    -5.4226147767622024e-05
+                ]
+            ],
+            [
+                [
+                    -0.21676123142242432,
+                    0.09500975906848907,
+                    0.9715903401374817,
+                    -0.7426847815513611
+                ],
+                [
+                    0.1603093445301056,
+                    0.9852063059806824,
+                    -0.06057631969451904,
+                    0.01756134070456028
+                ],
+                [
+                    -0.9629723429679871,
+                    0.1426244080066681,
+                    -0.22878551483154297,
+                    2.079652786254883
+                ]
+            ]
+        ],
+        "intrinsic": [
+            [
+                [
+                    1104.4561767578125,
+                    0.0,
+                    259.0
+                ],
+                [
+                    0.0,
+                    1093.0853271484375,
+                    196.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ],
+            [
+                [
+                    1479.7646484375,
+                    0.0,
+                    259.0
+                ],
+                [
+                    0.0,
+                    1444.2376708984375,
+                    196.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ]
+        ],
+        "width": 1440,
+        "height": 1072
+    },
+    "2": {
+        "prompt": [
+            "<Man 1> is framed chest-up at the counter, looking down with Christmas displays behind him. Medium close, eye-level, soft fluorescent light, muted colors, shallow focus.",
+            "<Woman 1> leans forward presenting a small box to <Man 1>, silver tinsel framing her face. Medium-close, slight high angle, soft fill light, warm highlights, focused on hands and face.",
+            "<Man 1> a middle-aged man with graying hair wearing a dark fur-collared coat and light blue shirt. <Woman 1> a young blonde woman wearing silver tinsel. <Man 1> stands at a store counter while <Woman 1> in festive garb hands him a small box; holiday shelves and decorations fill the background. Shot/Reverse Shot. Cuts from a medium-close of <Man 1> to a reverse medium-close on <Woman 1> offering the item, maintaining spatial continuity and conversational pacing."
+        ],
+        "extrinsic": [
+            [
+                [
+                    1.0,
+                    -5.823307583341375e-05,
+                    -2.78871702903416e-05,
+                    4.046639514854178e-05
+                ],
+                [
+                    5.82324355491437e-05,
+                    1.0,
+                    -2.2974152670940384e-05,
+                    9.872635928331874e-06
+                ],
+                [
+                    2.788850906654261e-05,
+                    2.2972528313403018e-05,
+                    1.0,
+                    -4.158007868682034e-05
+                ]
+            ],
+            [
+                [
+                    0.34012264013290405,
+                    0.17885807156562805,
+                    0.9232152104377747,
+                    -0.5144332051277161
+                ],
+                [
+                    0.0681162178516388,
+                    0.9744811058044434,
+                    -0.21388477087020874,
+                    0.0030607650987803936
+                ],
+                [
+                    -0.9379109144210815,
+                    0.1356329768896103,
+                    0.3192599415779114,
+                    0.38368725776672363
+                ]
+            ]
+        ],
+        "intrinsic": [
+            [
+                [
+                    751.8897094726562,
+                    0.0,
+                    259.0
+                ],
+                [
+                    0.0,
+                    750.6533813476562,
+                    140.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ],
+            [
+                [
+                    1309.3367919921875,
+                    0.0,
+                    259.0
+                ],
+                [
+                    0.0,
+                    1294.3680419921875,
+                    140.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ]
+        ],
+        "width": 1904,
+        "height": 1024
+    },
+    "3": {
+        "prompt": [
+            "<Man 1> is framed foreground with arm extended holding the bow, <Man 2> visible behind him smiling. Medium-wide two-shot, eye-level, moderate depth, bright daylight, warm tones.",
+            "<Man 1> fills the frame pulling the string, face and bow in focus. Tight close-up, frontal angle, shallow depth of field, sharp focus, strong sunlight, high contrast.",
+            "<Man 1> a stocky middle-aged man in a light shirt aiming a traditional bow. <Man 2> a younger bearded man in a red checked shirt with a scarf. <Man 1> draws and aims his bow outdoors in a sunlit village yard with tense concentration, while <Man 2> stands behind, watching and smiling. Multi-Angle. Cuts from a medium-wide two-shot showing <Man 1> and observer <Man 2> to a tight frontal close-up of <Man 1> aiming, intensifying focus on the action."
+        ],
+        "extrinsic": [
+            [
+                [
+                    0.9999999403953552,
+                    5.353374945116229e-06,
+                    -0.00029424228705465794,
+                    -0.00013251713244244456
+                ],
+                [
+                    -5.344685632735491e-06,
+                    1.0,
+                    2.95318677672185e-05,
+                    -1.8337621440878138e-05
+                ],
+                [
+                    0.0002942424616776407,
+                    -2.953029252239503e-05,
+                    0.9999999403953552,
+                    -1.511574191681575e-05
+                ]
+            ],
+            [
+                [
+                    -0.0550847053527832,
+                    0.02393517456948757,
+                    -0.9981948137283325,
+                    0.8397709131240845
+                ],
+                [
+                    -0.010534790344536304,
+                    0.999643087387085,
+                    0.024551255628466606,
+                    -0.01591922715306282
+                ],
+                [
+                    0.9984261393547058,
+                    0.011868170462548733,
+                    -0.05481290817260742,
+                    1.0450055599212646
+                ]
+            ]
+        ],
+        "intrinsic": [
+            [
+                [
+                    1366.881103515625,
+                    0.0,
+                    259.0
+                ],
+                [
+                    0.0,
+                    1364.3409423828125,
+                    112.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ],
+            [
+                [
+                    1735.0394287109375,
+                    0.0,
+                    259.0
+                ],
+                [
+                    0.0,
+                    1718.3203125,
+                    112.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            ]
+        ],
+        "width": 1920,
+        "height": 816
+    }
+}

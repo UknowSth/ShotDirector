@@ -1,0 +1,39 @@
+task: t2v-1.3B
+size: "832*480"
+ckpt_dir: ../Wan2.1/Wan2.1-T2V-1.3B
+offload_model: True
+t5_cpu: True
+sample_shift: 8
+sample_guide_scale: 6
+cam_guide_scale: 15 
+
+frame_num: 81
+ulysses_size: 1
+ring_size: 1
+t5_fsdp: False
+dit_fsdp: False
+save_file: null
+prompt_extend_target_lang: "zh"
+use_prompt_extend: False
+prompt_extend_method: "local_qwen"
+prompt_extend_model: null
+base_seed: 1021 
+mask_p: 0
+image: null
+first_frame: null
+last_frame: null
+sample_solver: "unipc"
+
+
+model_path: "ckpt/model.pt"
+transfer_path: "ckpt/trans.pt"
+encoder_path: "ckpt/encoder.pt"
+# lora_rank: 128
+
+sample_steps: 50
+
+general_prompt: True
+start_masked_layer: 18 # 6 #100
+end_masked_layer: 26 # 27 #100
+
+
